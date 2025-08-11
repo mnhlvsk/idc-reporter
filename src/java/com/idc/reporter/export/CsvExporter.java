@@ -12,5 +12,4 @@ public class CsvExporter implements Exporter {
         // todo implement using OpenCSV CSVWriter
         throw new UnsupportedOperationException("Unimplemented method 'export'");
     }
-
 }

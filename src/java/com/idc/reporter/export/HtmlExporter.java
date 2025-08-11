@@ -21,8 +21,8 @@ public class HtmlExporter implements Exporter {
 
             for (TableRow row : table.rows()) {
                 writer.printf("<tr><td>%s</td><td>%,.0f</td><td>%.1f%%</td></tr>%n",
-                        row.vendor(), row.units(), row.share());
-          }
+                         row.vendor(), row.units(), row.share());
+            } 
 
             writer.printf("<tr><td>Total</td><td>%.0f</td><td>100%%</td></tr>%n", table.totalUnits());
             writer.println("</table></body></html>");
@@ -30,5 +30,4 @@ public class HtmlExporter implements Exporter {
             throw new RuntimeException("Error exporting HTML", e);
         }
     }
-
 }

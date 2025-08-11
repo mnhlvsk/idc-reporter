@@ -12,5 +12,4 @@ public class ExcelExporter implements Exporter {
         // todo implement using Apache POI
         throw new UnsupportedOperationException("Unimplemented method 'export'");
     }
-
 }
